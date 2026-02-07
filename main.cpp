@@ -19,6 +19,7 @@ int main()
 }
 
 // Pointer basics - declaring a pointer, initialising a pointer and de-referencing a pointer
+
 void demo1()
 {
     int x = 25;
@@ -142,6 +143,12 @@ void demo2()	// swap values of two variables using by passing their addresses
     cout << "sum = " << sum << endl;
 }
 
+// access the values of two variables that have been passed by pointer.
+// i.e. the variables addresses have been passed in, and we use pointer parameters
+// to capture the addresses.  We then use the pointers to access the original variables.
+// const is used to prevent the pointers from changing the variables the pointers point at, as
+// we only need to access their values.
+//
 int add( const int* int_ptr1, const int* int_ptr2) {
     int sum = *int_ptr1 + *int_ptr2;
     return sum;
